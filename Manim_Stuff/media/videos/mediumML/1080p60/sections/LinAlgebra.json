@@ -1,0 +1,112 @@
+[
+    {
+        "name": "autocreated",
+        "type": "default.normal",
+        "video": "LinAlgebra_0000.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "8.000000",
+        "nb_frames": "480"
+    },
+    {
+        "name": "Now vector addition",
+        "type": "default.normal",
+        "video": "LinAlgebra_0001.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "8.000000",
+        "nb_frames": "480"
+    },
+    {
+        "name": "Direction",
+        "type": "default.normal",
+        "video": "LinAlgebra_0002.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "12.000000",
+        "nb_frames": "720"
+    },
+    {
+        "name": "List of properties",
+        "type": "default.normal",
+        "video": "LinAlgebra_0003.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "10.000000",
+        "nb_frames": "600"
+    },
+    {
+        "name": "Inner Product",
+        "type": "default.normal",
+        "video": "LinAlgebra_0004.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "27.000000",
+        "nb_frames": "1620"
+    },
+    {
+        "name": "Outer product",
+        "type": "default.normal",
+        "video": "LinAlgebra_0005.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "6.000000",
+        "nb_frames": "360"
+    },
+    {
+        "name": "Characteristics and Special Matrices",
+        "type": "default.normal",
+        "video": "LinAlgebra_0006.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "45.000000",
+        "nb_frames": "2700"
+    },
+    {
+        "name": "Determinant",
+        "type": "default.normal",
+        "video": "LinAlgebra_0007.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "16.000000",
+        "nb_frames": "960"
+    },
+    {
+        "name": "Matrix Inversion",
+        "type": "default.normal",
+        "video": "LinAlgebra_0008.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "24.000000",
+        "nb_frames": "1440"
+    },
+    {
+        "name": "Eigen stuff",
+        "type": "default.normal",
+        "video": "LinAlgebra_0009.mp4",
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "60/1",
+        "duration": "10.000000",
+        "nb_frames": "600"
+    }
+]
