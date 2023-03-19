@@ -19,8 +19,9 @@ def compute_cost(tokens, engine):
 
 def generate_outline(context, engine, max_tokens, temperature):
     
+    prompt = f"Generate an outline for an online course on {context}"
+    
     if st.session_state.engine == "text-davinci-002":
-        prompt = f"Generate an outline for an online course on {context}"
         response = openai.Completion.create(
             engine=engine,
             prompt=prompt,
