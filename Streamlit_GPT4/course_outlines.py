@@ -106,6 +106,10 @@ if context:
             st.info(f"Query Tokens: {tokens_used}. Total tokens used: {st.session_state.tokens_used}")
             st.info(f"Query Cost: {query_cost}. Total Session's Cost ${st.session_state.cost:.5f}")
             
+            st.download_button("Download Outline", 
+                               outline, 
+                               file_name=f"{st.session_state.engine}_outline.txt")
+            
     except Exception as e:
         st.error(e)
         
