@@ -49,21 +49,38 @@ with st.sidebar:
     st.session_state.max_tokens = st.slider("Max Tokens", min_value=32, max_value=2048, value=st.session_state.max_tokens)
     st.session_state.temperature = st.slider("Temperature", min_value=0.1, max_value=1.0, value=st.session_state.temperature, step=0.1)
     st.session_state.engine = st.selectbox("Engine", 
-                                           ["GPT-3", "chatGPT-3.5", "chatGPT-4"], 
-                                           index=["text-davinci-003", "gpt-3.5-turbo", "gpt-4"].index(st.session_state.engine))
+                                           ["text-davinci-002", "gpt-3.5-turbo", "gpt-4"])
 
 # Get user input and generate outline
 context = st.text_input("Enter context for your course here:")
 if context:
-    if st.button("Generate Outline"):
-        if st.session_state.engine == "GPT-3":
-            outline = generate_outline_GPT(context, st.session_state.engine, st.session_state.max_tokens, st.session_state.temperature)
-            
-        elif st.session_state.engine == "chatGPT-3.5":
-            outline = generate_outline_chatGPT(context, st.session_state.engine, st.session_state.max_tokens, st.session_state.temperature)
-            
-        elif st.session_state.engine == "chatGPT-4":
-            outline = generate_outline_chatGPT(context, st.session_state.engine, st.session_state.max_tokens, st.session_state.temperature)
+    try:
+        if st.button("Generate Outline"):
+            if st.session_state.engine == "text-davinci-002":
+                outline = generate_outline_GPT(context, 
+                                            st.session_state.engine, 
+                                            st.session_state.max_tokens, 
+                                            st.session_state.temperature)
+                
+            elif st.session_state.engine == "gpt-3.5-turbo":
+                outline = generate_outline_chatGPT(context, 
+                                                st.session_state.engine, 
+                                                st.session_state.max_tokens, 
+                                                st.session_state.temperature)
+                
+            elif st.session_state.engine == "gpt-4":
+                outline = generate_outline_chatGPT(context, 
+                                                st.session_state.engine, 
+                                                st.session_state.max_tokens, 
+                                                st.session_state.temperature)
 
-        st.write("## Generated Outline")
-        st.write(outline)
+            st.write("## Generated Outline")
+            st.write(outline)
+            
+    except openai.Error as error:
+        st.write("An error occurred while generating the outline:")
+        st.write(error.message)
+        st.write("Please try again later or adjust the model parameters.")
+        
+if not context:
+    st.info("Please enter some context for your online course in the text box")
